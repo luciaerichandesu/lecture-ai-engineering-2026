@@ -30,6 +30,8 @@ uv run pytest -q
 uv run python -m app.ask "LoRAとは何ですか？"
 ```
 
+回答後は続けて質問でき、会話履歴は同じ実行中のAPI呼び出しに含まれます。各回答で入出力・合計トークン数と応答時間を表示します。「終了」（または `exit` / `quit`）で終了します。質問を省略した場合は既定の質問から始まります。
+
 詳しい手順は [lectures/01/problem.md](lectures/01/problem.md) を見てください。
 
 ## 構成
